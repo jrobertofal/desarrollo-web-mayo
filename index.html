@@ -29,6 +29,8 @@
     </figure>
     </section>
 
+    <br>
+
     <section class="donde" id="donde">
     <h2>De donde es</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, deserunt autem, quia assumenda illo consequatur reiciendis, illum numquam harum cumque recusandae in obcaecati eum. Labore quia distinctio ducimus iure excepturi?</p>
@@ -48,22 +50,31 @@
     <div class="contacto" id="contacto">
         <h2>Contacto</h2>
         
-        <form action="#" method="post">
-            <label for="nombre">Nombre</label>
-            <input type="text" placeholder="Ingresa un Nombre">
-        
-            <label for="apellido">Apellido</label>
-            <input type="text" placeholder="Ingresa un Apellido">
-        
-            <label for="email">Email</label>
-            <input type="text" placeholder="Ingresa tu Email">
-
-            <label for="genero" class="genero"></label>
-            <input type="radio" value="Hombre">
-            <input type="radio" value="Mujer">
-            <input type="radio" value="Otro">
-
-            <input type="submit" value="Enviar">
+        <form class="form">
+            <h2 class="form__title">Contacto</h2>
+            <p class="form__parrafo">¿Tienes Cuenta?<a href="" class="form__link">Entra aqui</a></p>
+    
+            <div class="form__container">
+                <div class="form__group">
+                    <input type="text" id="name" class="form__input" placeholder=" ">
+                    <label for="name" class="form__label">Nombre</label>
+                    <span class="form__line"> </span>
+                </div>
+    
+                <div class="form__group">
+                    <input type="text" id="user" class="form__input" placeholder=" " required>
+                    <label for="email" class="form__label">Ingresa tu correo</label>
+                    <span class="form__line"> </span>
+                </div>
+    
+                <div class="form__group">
+                    <input type="text" id="password" class="form__input" placeholder=" ">
+                    <label for="text" class="form__label">Comentarios.......</label>
+                    <span class="form__line"> </span>
+                </div>
+    
+                <input type="submit" class="form__submit"  value="Enviar">
+            </div>
         </form>
 
     </div>
