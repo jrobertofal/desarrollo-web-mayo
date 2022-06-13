@@ -1,12 +1,6 @@
-
-
-
-
-
-
 body{
     background-color: rgb(255, 255, 255);
-    border: 1px solid black;
+    border: 1px solid rgb(199, 199, 199);
     margin-left: 20px;
     margin-top: 0;
     margin-right: 20px;
@@ -16,22 +10,7 @@ body{
 h1{
     text-align: center;
     font-size: 40px;
-}
-
-.nav{
-    text-align: center;
-    padding-right: 50px;
-    border: 1px solid black;
-}
-.nav li{
-    display: inline-block;
-    margin-left: 20px;
-    padding: 4px;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-radius: 7px;
-    font-size: 15px;
-    border: 1px solid black;
+    background: linear-gradient(to right, orange, orange, orange, white, white);
 }
 
 .imagenes img{
@@ -49,33 +28,31 @@ h1{
     flex-wrap: wrap;
 }
 
-/* PRIMERA SECCION */
+/*  */
 .quien{
     text-align: center;
 }
 
 .quien h2{
-    font-size: 30px;
-}
-/* SEGUNDA SECCION */
-.donde{
-    text-align: center;
-}
-
-.donde h2{
-    font-size: 30px;
-    
-}
-/* TERCERA SECCION */
-.pasa{
-    text-align: center;
-}
-
-.pasa h2{
+    color: orange;
     font-size: 30px;
     
 }
 
+/* BUTTON */
+
+.button{
+    border-radius: 7px;
+    cursor: pointer;
+    color: aliceblue;
+    padding: 7px;
+    background: blueviolet;
+}
+
+.button a{
+    color: aliceblue;
+    text-decoration: none;
+}
 /* FORMULARIO */
 
 
