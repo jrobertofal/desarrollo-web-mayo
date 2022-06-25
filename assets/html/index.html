@@ -6,26 +6,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desarrollo Web Mayo</title>
-    <link rel="stylesheet" href="./assets/css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 
 <body>
-    <header>
-        <h1>Roberto Falcon</h1>
-        <nav class="nav">
-            <ul>
-                <li><a href="#quien"> Quien es</a></li>
-                <li><a href="#donde">De donde es</a></li>
-                <li><a href="#pasa">Pasatiempos</a></li>
-                <li><a href="#extra">Extra</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
+    <header class="container border">
+        <h1 class="text-center bg-warning">Roberto Falcon</h1>
+        <nav class="navbar navbar-expand-lg navbar-expand-sm">
+            <div class="container-fluid">
+
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#quien">Quien es</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#donde">De donde es</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#pasa">Pasatiempos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#extra">Cosas Extra</a>
+                  </li>
+                
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
 
-        <main>
-            <div class="quien" id="quien">
-                <div class="quien__es">
+        <main class="main container border text-center">
+
+                <div class="posts col-md-12" id="quien">
                     <h2>Quien es</h2>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui totam accusamus architecto
                         perferendis ipsum ipsam amet dolorum vero culpa expedita quis praesentium delectus velit, quia
@@ -39,27 +51,49 @@
                         autem, quia assumenda illo consequatur reiciendis, illum numquam harum cumque recusandae in
                         obcaecati eum. Labore quia distinctio ducimus iure excepturi?</p>
                     <figure class="imagenes">
-                        <img src="./assets/img/img1.jpg" alt="">
-                        <img src="./assets/img/img2.jpg" alt="">
+                        <img src="/assets/img/img1.jpg" alt="" class="w-75">
+                        <img src="/assets/img/img2.jpg" alt="" class="w-75">
                     </figure>
-                    <button class="button"><a href="/pagess/pag1/pag2/quienES.html">Saber Mas</a></button>
+                    <button type="button" class="btn btn-warning"><a href="./quienES.html">Saber Mas</a></button>
                 </div>
 
-                <aside class="aside__a">
+            <hr>
+
+            <aside class="col-md-7 hidden-xs hidden-sm card-show-sm">
+                <h5>Anuncio</h5>
+                <p>Lorem nsequatur nulla molestiae nisi esse quia dolore repudiandae mollitia, temporibus molestias
+                    facilis alias fuga aperiam! Hic odio iusto, doloremque perspiciatis non veniam ducimus similique
+                    libero! Fugit odio assumenda asperiores facilis possimus soluta nobis quibusdam quia.</p>
+                <figure class="imagenes">
+                    <img src="/assets/img/img6.jpg" alt="" class="w-75">
+                </figure>
+                <button type="button" class="btn btn-info btn-sm">Saber mas...</button>
+            
+                <hr> 
+                
+                <h5>Anuncio</h5>
+                <p>Lorem nsequatur nulla molestiae nisi esse quia dolore repudiandae mollitia, temporibus molestias
+                    facilis alias fuga aperiam! Hic odio iusto, doloremque perspiciatis non veniam ducimus similique
+                    libero! Fugit odio assumenda asperiores facilis possimus soluta nobis quibusdam quia.</p>
+                <figure class="imagenes">
+                    <img src="/assets/img/img8.jpg" alt="" class="w-75">
+                </figure>
+                <button type="button" class="btn btn-info btn-sm">Saber mas...</button>
+
+                <hr>
+
                     <h5>Anuncio</h5>
                     <p>Lorem nsequatur nulla molestiae nisi esse quia dolore repudiandae mollitia, temporibus molestias
                         facilis alias fuga aperiam! Hic odio iusto, doloremque perspiciatis non veniam ducimus similique
                         libero! Fugit odio assumenda asperiores facilis possimus soluta nobis quibusdam quia.</p>
                     <figure class="imagenes">
-                        <img src="/assets/img/img6.jpg" alt="">
+                        <img src="/assets/img/img7.jpg" alt="" class="w-75">
                     </figure>
-                    <input type="button" value="Ver mas...">
-                </aside>
-
-            </div>
+                    <button type="button" class="btn btn-info btn-sm">Saber mas...</button>
+        </aside>
+        
             <hr>
-            <div class="donde" id="donde">
-                <div class="donde__es">
+                <div class="posts col-md-12" id="donde">
                     <h2>De donde es</h2>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius deleniti corporis nostrum totam in
                         odio neque delectus modi. Suscipit nihil voluptatem non corrupti sit aut animi! Obcaecati cum
@@ -73,28 +107,14 @@
                         numquam harum cumque recusandae in obcaecati eum. Labore quia distinctio ducimus iure excepturi?
                     </p>
                     <figure class="imagenes">
-                        <img src="./assets/img/img3.jpg" alt="">
+                        <img src="/assets/img/img3.jpg" alt="" class="w-75">
                     </figure>
-                    <button class="button"><a href="./pagess/pag1/pag3/dondeEs.html">Saber Mas</a></button>
+                    <button type="button" class="btn btn-warning"><a href="./dondeEs.html">Saber Mas</a></button>
                 </div>
 
-                <aside class="aside__b">
-                    <h5>Anuncio</h5>
-                    <p>Lorem nsequatur nulla molestiae nisi esse quia dolore repudiandae mollitia, temporibus molestias
-                        facilis alias fuga aperiam! Hic odio iusto, doloremque perspiciatis non veniam ducimus similique
-                        libero! Fugit odio assumenda asperiores facilis possimus soluta nobis quibusdam quia.</p>
-                    <figure class="imagenes">
-                        <img src="./assets/img/img8.jpg" alt="">
-                    </figure>
-                    <input type="button" value="Ver mas...">
-            </aside>
-
-            </div>
             <hr>
 
-
-            <div class="pasa" id="pasa">
-                <div class="pasa__es">
+                <div class="posts col-md-12" id="pasa">
                     <h2>Pasatiempos</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium fuga exercitationem
                         voluptates dicta! Culpa repellat, obcaecati non voluptatum recusandae necessitatibus! Reiciendis
@@ -108,27 +128,14 @@
                         Fugit, deserunt autem, quia assumenda illo consequatur reiciendis, illum numquam harum cumque
                         recusandae in obcaecati eum. Labore quia distinctio ducimus iure excepturi?</p>
                     <figure class="imagenes">
-                        <img src="./assets/img/img4.jpg" alt="">
+                        <img src="/assets/img/img4.jpg" alt="IMAGEN" class="w-75">
                     </figure>
-                    <button class="button"><a href="./pagess/pag1/pag4/pasaEs.html">Saber Mas</a></button>
+                    <button type="button" class="btn btn-warning text-decoration-none"><a href="./pasaEs.html">Saber Mas</a></button>
                 </div>
 
-                <aside class="aside__c">
-                    <h5>Anuncio</h5>
-                    <p>Lorem nsequatur nulla molestiae nisi esse quia dolore repudiandae mollitia, temporibus molestias
-                        facilis alias fuga aperiam! Hic odio iusto, doloremque perspiciatis non veniam ducimus similique
-                        libero! Fugit odio assumenda asperiores facilis possimus soluta nobis quibusdam quia.</p>
-                    <figure class="imagenes">
-                        <img src="./assets/img/img7.jpg" alt="">
-                    </figure>
-                    <input type="button" value="Ver mas...">
-            </aside>
-
-            </div>
             <hr>
 
-            <div class="extra" id="extra">
-                <div class="extra__es">
+                <div class="extra__es" id="extra">
                     <h2>Cosas Extra</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium fuga exercitationem
                         voluptates dicta! Culpa repellat, obcaecati non voluptatum recusandae necessitatibus! Reiciendis
@@ -142,44 +149,34 @@
                         Fugit, deserunt autem, quia assumenda illo consequatur reiciendis, illum numquam harum cumque
                         recusandae in obcaecati eum. Labore quia distinctio ducimus iure excepturi?</p>
                     <figure class="imagenes">
-                        <img src="./assets/img/img5.jpg" alt="">
+                        <img src="/assets/img/img5.jpg" alt="" class="w-75" width="200px">
                     </figure>
-                    <button class="button"><a href="/pagess/pag1/pag5/extraEs.html">Saber Mas</a></button>
+                    <button type="button" class="btn btn-warning"><a href="./extraEs.html">Saber Mas</a></button>
                 </div>
-            </div>
             <hr>
 
-            <div class="contacto" id="contacto">
-                <form class="form">
-                    <h2 class="form__title">Contacto</h2>
-                    <p class="form__parrafo">¿Tienes Cuenta?<a href="" class="form__link">Entra aqui</a></p>
-
-                    <div class="form__container">
-                        <div class="form__group">
-                            <input type="text" id="name" class="form__input" placeholder=" ">
-                            <label for="name" class="form__label">Nombre</label>
-                            <span class="form__line"> </span>
-                        </div>
-
-                        <div class="form__group">
-                            <input type="text" id="user" class="form__input" placeholder=" " required>
-                            <label for="email" class="form__label">Ingresa tu correo</label>
-                            <span class="form__line"> </span>
-                        </div>
-                        <div class="form__group">
-                            <input type="text" id="password" class="form__input" placeholder=" ">
-                            <label for="text" class="form__label">Comentarios.......</label>
-                            <span class="form__line"> </span>
-                        </div>
-
-                        <input type="submit" class="form__submit" value="Enviar">
-                    </div>
-                </form>
-
-            </div>
+            <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="email" width="200px">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Contraseña</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInput">Comentarios</label>
+                    <input type="text" class="form-control" id="exampleInput" placeholder="Comentarios">
+                  </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Acepta terminos y Condiciones</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
         </main>
 
-        <footer>-2022->>>>>>>-Exito-</footer>
+        <footer class="text-center">-2022->>>>>>>-Exito-</footer>
 
 
 </body>
