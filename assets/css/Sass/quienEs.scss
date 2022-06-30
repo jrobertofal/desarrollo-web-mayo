@@ -1,0 +1,94 @@
+$backgrcolor-h1:linear-gradient(to right, orange, orange, orange, white, white);
+$backgrcolor-body:rgb(255, 255, 255);
+$border-color:rgb(199, 199, 199);
+$h2:orange;
+$button-color:blueviolet;
+$button-p-color:aliceblue;
+$color-blue:blue;
+$color-white:white;
+$color-black:black;
+$yellow:yellow;
+@import"./_form.scss";
+body{
+    background-color: $backgrcolor-body;
+    border: 1px solid $border-color;
+    margin-left: 20px;
+    margin-top: 0;
+    margin-right: 20px;
+    margin-bottom: 0;
+}
+.header{
+    margin: 0px;
+    padding: 0px;
+
+h1{
+    text-align: center;
+    font-size: 40px;
+    color: $h2;
+}
+}
+
+
+.imagenes img{
+    max-width: 500px;
+    width: 100%;
+    height: 100%;
+
+    .imagenes{
+        width: 90%;
+        margin: 0 auto;
+        overflow: hidden;
+        padding: 60px 0px;
+        gap: 30px;
+        flex-wrap: wrap;
+} 
+ }
+
+/*  */
+.quien{
+    text-align: center;
+
+    .quien h2{
+    color: $h2;
+    font-size: 30px;
+    
+}
+    p{
+    color: $h2;
+
+    &:hover{
+        color: $color-black;
+    }
+}
+}
+
+
+/* BUTTON */
+
+.button{
+    border-radius: 7px;
+    cursor: pointer;
+    color: $button-p-color;
+    padding: 7px;
+    background: $button-color;
+
+
+    .button a{
+    color: $button-p-color;
+    text-decoration: none;
+}
+
+   &:hover{
+    background-color: orange;
+   }
+}
+
+/* FOOTER */
+footer{
+    text-align: center;
+    color: $h2;
+
+    &:hover{
+        color: $yellow;
+    }
+}

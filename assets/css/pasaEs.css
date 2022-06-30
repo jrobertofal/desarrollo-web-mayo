@@ -8,11 +8,47 @@ body{
 }
 
 h1{
+    width: 100px;
+    height: 100px;
     text-align: center;
-    font-size: 40px;
-    background: linear-gradient(to right, orange, orange, orange, white, white);
+    background-color: orange;
+    animation-name: un_efecto_h1;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 4s;
+    animation-delay: 0s;
 }
 
+@keyframes un_efecto_h1{
+    0%{
+        width: 100px;
+        color: white;
+    }
+
+    25%{
+        width: 300px;
+
+    }
+
+    50%{
+        width: 300px;
+    }
+
+    100%{
+        width: 100px;
+    }
+}
+.pasa__p{
+    background-color: rgb(200, 200, 200);
+    color: gray;
+    transition: height 2s, width 1s, background-color 2s, color 2s, transform 2s;
+}
+
+.pasa__p:hover{
+    background-color: orange;
+    color: white;
+    transform: rotate(360deg);
+}
 .imagenes img{
     max-width: 500px;
     width: 100%;
@@ -46,8 +82,11 @@ h1{
     color: aliceblue;
     padding: 7px;
     background: blueviolet;
+    transition: all .4s ease;
 }
-
+.button:hover{
+    background-color: orange;
+}
 .button a{
     color: aliceblue;
     text-decoration: none;
@@ -158,4 +197,10 @@ h1{
 footer{
     text-align: center;
     color: orange;
+}
+@media only screen and (min-width: 992px){
+    .pasa__p{
+        text-align: left;
+        width: 900px;
+    }
 }

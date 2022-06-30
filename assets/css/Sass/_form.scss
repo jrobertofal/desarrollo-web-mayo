@@ -1,0 +1,103 @@
+.contacto h2{
+    text-align: center;
+}
+
+.form{
+    background-color: $color-white;
+    margin: auto;
+    width: 90%;
+    max-width: 700px;
+    padding: 70px 90px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -5px $color-black;
+    text-align: center;
+    .form__title{
+        font-size: 25px;
+        margin-bottom: 8px;
+    }
+    .form__parrafo{
+        font-weight: 300;
+    }
+    .form__link{
+        font-weight: 24px;
+        color: black;
+    }
+    
+    .form__container{
+        margin-top: 24px;
+        display: grid;
+        gap: 20px;
+        
+        .form__group{
+            position: relative;
+            color: $button-color;
+
+            .form__label{
+                color: $h2;
+                cursor: pointer;
+                position: absolute;
+                top: 0;
+                left: 5px;
+                transform: translateY(10px);
+                transition: transform .5s, color .3s;
+            }
+            .form__input{
+                width: 100%;
+                background: none;
+                color: $button-color;
+                font-size: 20px;
+                padding: .6em .3em;
+                border: none;
+                outline: none;
+                border-bottom: 1px solid $button-p-color;
+                font-family: "Roboto", sans-serif;
+            }
+
+            .form__line{
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 1px;
+                background-color: $h2;
+                transform: scale(0);
+                transform: left bottom;
+                transition: transform .4s;
+        
+                .form__input:focus ~ .form__line,
+                .form__input:not(:placeholder-shown) ~ .form__label{
+                    transform: scale(1);
+                }
+            }
+        }
+        
+    }
+    
+    
+    .form__input:focus + .form__label,
+    .form__input:not(:placeholder-shown) + .form__label{
+        transform: translateY(-12px) scale(.7);
+        transform-origin: left top;
+        color: $button-color;
+    }
+    
+    .form__submit{
+        background-color: $color-blue;
+        color: $button-p-color;
+        font-size: "Roboto", sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+        padding: 14px 0;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: all .4s ease;
+
+
+            &:hover{
+                color: $color-black;
+                background-color: $h2;
+            }
+    }
+    
+}
