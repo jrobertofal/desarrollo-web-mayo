@@ -33,7 +33,7 @@
             color: $button-color;
 
             .form__label{
-                color: $h2;
+                color: $color-white;
                 cursor: pointer;
                 position: absolute;
                 top: 0;
@@ -95,7 +95,7 @@
 
 
             &:hover{
-                color: $color-black;
+                color: $color-white;
                 background-color: $h2;
             }
     }

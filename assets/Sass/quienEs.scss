@@ -17,6 +17,14 @@ body{
     margin-right: 20px;
     margin-bottom: 0;
 }
+$coloresH: (
+    principal:orange,
+    secundario:blueviolet
+);
+
+@function colorh($color) {
+    @return map-get($coloresH, $color);
+}
 .header{
     margin: 0px;
     padding: 0px;
@@ -24,7 +32,7 @@ body{
 h1{
     text-align: center;
     font-size: 40px;
-    color: $h2;
+    color: color(principal);
 }
 }
 
@@ -44,25 +52,39 @@ h1{
 } 
  }
 
-/*  */
-.quien{
-    text-align: center;
-
-    .quien h2{
-    color: $h2;
-    font-size: 30px;
-    
+@mixin bg-color($color:blueviolet){
+    background-color: $color;
 }
-    p{
-    color: $h2;
 
-    &:hover{
-        color: $color-black;
+.quien h2{
+    @include bg-color($button-color);
+    h2{text-align: center};
+}
+form{
+    @extend .button;
+
+    .expend{
+        background-color: orange;
     }
 }
-}
 
+/*  */
+// .quien{
+//     text-align: center;
 
+//     .quien h2{
+//     color: $h2;
+//     font-size: 30px;
+    
+// }
+//     p{
+//     color: $h2;
+
+//     &:hover{
+//         color: $color-black;
+//     }
+// }
+// }
 /* BUTTON */
 
 .button{

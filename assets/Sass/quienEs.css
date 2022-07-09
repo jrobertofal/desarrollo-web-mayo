@@ -33,7 +33,7 @@
   color: blueviolet;
 }
 .form .form__container .form__group .form__label {
-  color: orange;
+  color: white;
   cursor: pointer;
   position: absolute;
   top: 0;
@@ -102,7 +102,7 @@
   transition: all 0.4s ease;
 }
 .form .form__submit:hover {
-  color: black;
+  color: white;
   background-color: orange;
 }
 
@@ -122,7 +122,7 @@ body {
 .header h1 {
   text-align: center;
   font-size: 40px;
-  color: orange;
+  color: color(principal);
 }
 
 .imagenes img {
@@ -139,34 +139,31 @@ body {
   flex-wrap: wrap;
 }
 
-/*  */
-.quien {
+.quien h2 {
+  background-color: blueviolet;
+}
+.quien h2 h2 {
   text-align: center;
 }
-.quien .quien h2 {
-  color: orange;
-  font-size: 30px;
-}
-.quien p {
-  color: orange;
-}
-.quien p:hover {
-  color: black;
+
+form .expend {
+  background-color: orange;
 }
 
+/*  */
 /* BUTTON */
-.button {
+.button, form {
   border-radius: 7px;
   cursor: pointer;
   color: aliceblue;
   padding: 7px;
   background: blueviolet;
 }
-.button .button a {
+.button .button a, form .button a, .button form a, form form a {
   color: aliceblue;
   text-decoration: none;
 }
-.button:hover {
+.button:hover, form:hover {
   background-color: orange;
 }
 
